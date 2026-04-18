@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Libre Baskerville', serif;
+    background: #f5f1dc;
+}
+
+/* =========================
+   WRAPPER (BOXED LAYOUT)
+========================= */
+.wrapper {
+    max-width: 1104px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+
+
+.visitUs-btn:hover,
+.joinUs-btn:hover,
+.campus-visit-btn:hover {
+    background-color: #000f8a;
+}
+
+/* hover effect on navbar links */
+.navigation-container a {
+    position: relative;
+    text-decoration: none;
+    color: black;
+}
+
+.navigation-container a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background: black;
+    transition: width 0.3s ease;
+}
+
+.navigation-container a:hover::after {
+    width: 100%;
+}
