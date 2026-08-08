@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* outline: 1px solid rgb(248, 125, 125); */
 }
 
 body {
@@ -13,7 +14,7 @@ body {
    WRAPPER (BOXED LAYOUT)
 ========================= */
 .wrapper {
-    max-width: 1104px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }

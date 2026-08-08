@@ -11,11 +11,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 30px;
-    background: linear-gradient(0deg, #E8DBB3, #E8DBB3), #F5F1DC;
-    border-radius: 10px;
-}
+    padding: 10px 0px;
 
+    /* Updated to match Figma: 1px width, 45% black opacity */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.45);
+
+    /* Gives a little breathing room between the line and the hero section */
+    margin-bottom: 25px;
+}
 
 .menu-toggle {
     display: none;
@@ -162,7 +165,7 @@
     padding: 5px;
     gap: 19px;
     width: 100%;
-    background: #E8DBB3;
+    /* background: #E8DBB3; */
     border-radius: 15px;
 
 }
@@ -724,6 +727,10 @@
     .header {
         padding: 10px 15px;
         position: relative;
+        border-bottom: none;
+        /* Hides the 45% opacity separator on mobile */
+        margin-bottom: 0;
+        /* Removes the extra desktop spacing so it sits flush */
     }
 
     .menu-toggle {
